@@ -9,7 +9,7 @@ function Shop() {
     const fetch= async()=>{
         const data = await Axios.get("https://fortnite-api.theapinetwork.com/store/get");
         const items = await data.data
-        console.log(items.data[0]['item'])
+        // console.log(items.data[0]['item'])
         setItems(items.data)
     }
 
@@ -22,7 +22,7 @@ function Shop() {
         <div>
             <h1>Shop page</h1>
             {items.map(i=>(
-                <div> 
+                <div key={i['itemId']}> 
                     <h3>{i['item']['name']}</h3> 
                     {/* <div>
                     {i['item']['description']}
