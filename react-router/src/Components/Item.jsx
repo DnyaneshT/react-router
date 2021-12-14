@@ -24,3 +24,4 @@ function Item({match}) {
 }
 
 export default Item
+//making a get call to fortnite api but not using that data anywhere. Displaying the id received from the match
