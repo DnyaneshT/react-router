@@ -25,10 +25,10 @@ function Shop() {
             {items.map(i=>(
                 <div key={i.itemId}> 
                     <Link to={`/shop/${i.itemId}`}> <h3>{i.item.name}</h3> </Link>
-                    {/* <div>
-                    {i['item']['description']}
-                    {i['item']['type']}
-                    </div> */}
+                        <div>
+                            {i['item']['description']}
+                            {i['item']['type']}
+                        </div>
                 </div>
             ))}
         </div>
